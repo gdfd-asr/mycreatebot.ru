@@ -1,23 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Ddddlog</title>
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Django dd Blog</a></h1>
-        </div>
+{% extends 'creat/base.html' %}
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. d id elit non mi porta gravida at eget metus. Fusce dapibus, cccctellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
         </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quacccm. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
-    </body>
-</html>
+    {% endfor %}
+{% endblock %}
