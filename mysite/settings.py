@@ -25,7 +25,7 @@ SECRET_KEY = '52qv$fje^!!z*_g0fdf&ua10as-%5n9t0=)x#3fpi8us-47t3^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['mycreatebot.ry', 'www.mycreatebot.ru']
 
 
 # Application definition
