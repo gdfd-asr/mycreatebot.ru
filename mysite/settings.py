@@ -25,7 +25,7 @@ SECRET_KEY = '52qv$fje^!!z*_g0fdf&ua10as-%5n9t0=)x#3fpi8us-47t3^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mycreatebot.ry', 'www.mycreatebot.ru']
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 
 # Application definition
@@ -78,9 +78,6 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'USER': 'u0950006_djuser',
-        'PASSWORD': 'vA1mMM_0',
-        'HOST': 'localhost',
     }
 }
 
